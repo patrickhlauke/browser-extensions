@@ -1,0 +1,4 @@
+content		geourl	chrome/chromeFiles/content/
+locale		geourl	en	chrome/chromeFiles/locale/en/
+skin		geourl  classic chrome/chromeFiles/skin/
+overlay		chrome://browser/content/browser.xul chrome://geourl/content/overlay.xul

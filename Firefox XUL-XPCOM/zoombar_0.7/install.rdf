@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+	<Description about="urn:mozilla:install-manifest">
+		<em:id>{FBFB7597-9E32-46b4-A500-8B6B0412777F}</em:id>
+		<em:version>0.7</em:version>
+		<em:type>2</em:type>
+		
+		<!-- Target Application this extension can install into, 
+			 with minimum and maximum supported versions. --> 
+		<em:targetApplication> <!-- Firefox -->
+			<Description>
+				<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+				<em:minVersion>3.0b1</em:minVersion>
+				<em:maxVersion>3.0+</em:maxVersion>
+			</Description>
+		</em:targetApplication>
+		
+		<!-- Front End MetaData -->
+		<em:name>Zoom toolbar</em:name>
+		<em:description>Adds zoom buttons to the toolbar.</em:description>
+		<em:creator>Patrick H. Lauke aka redux</em:creator>
+		<em:homepageURL>http://www.splintered.co.uk/</em:homepageURL>
+		<em:iconURL>chrome://zoombar/skin/icon.png</em:iconURL>
+
+		<!-- Attribution to for the icon -->
+		<em:contributor>Jonas Rask http://jonas.seph.ws/</em:contributor>
+	</Description>      
+</RDF>

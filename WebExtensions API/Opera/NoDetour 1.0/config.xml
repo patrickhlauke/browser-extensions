@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets">
+    <name>NoDetour</name>
+    <description>Changes any links being passed through redirection scripts (e.g. /cgi-bin/redirect.cgi?url=http://foo.com - often used for tracking click-throughs or forcing visitors through an intermediate adverts page) to point straight to the final URL.</description>
+    <author href="http://www.splintered.co.uk/">Patrick H. Lauke</author>
+    <icon src="icon.png"/>
+</widget>

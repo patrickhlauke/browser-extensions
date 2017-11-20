@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+	<Description about="urn:mozilla:install-manifest">
+
+		<em:id>{BEA8BE00-5A43-4f04-9753-6FE4567C6E5A}</em:id>
+		<em:name>del.icio.us post</em:name>
+		<em:version>0.2</em:version>
+		<em:description>Posts current page or link to del.icio.us</em:description>
+		<em:creator>Patrick H. Lauke aka redux</em:creator>
+		<em:homepageURL>http://www.splintered.co.uk/</em:homepageURL>
+		<em:iconURL>chrome://deliciouspost/skin/icon.png</em:iconURL>
+		<em:aboutURL>chrome://deliciouspost/content/about.xul</em:aboutURL>
+		<em:file>
+			<Description about="urn:mozilla:extension:file:deliciouspost.jar">
+				<em:locale>locale/en-US/deliciouspost/</em:locale>
+				<em:package>content/deliciouspost/</em:package>
+				<em:skin>skin/classic/deliciouspost/</em:skin>
+			</Description>
+		</em:file>
+
+		<em:targetApplication> <!-- Firefox -->
+			<Description>
+				<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+				<em:minVersion>1.0</em:minVersion>
+				<em:maxVersion>1.0</em:maxVersion>
+			</Description>
+		</em:targetApplication>
+
+	</Description>
+
+</RDF>

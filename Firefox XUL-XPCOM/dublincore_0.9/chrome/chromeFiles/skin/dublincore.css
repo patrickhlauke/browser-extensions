@@ -1,0 +1,28 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* toolbar button */
+
+#dublincore-toolbarbutton {
+	list-style-image: url(chrome://dublincore/skin/buttons.png);
+	-moz-image-region: rect(0 24px 24px 0);
+}
+
+#dublincore-toolbarbutton[disabled="true"], #dublincore-toolbarbutton[disabled="true"]:hover {
+	-moz-image-region: rect(0 48px 24px 24px);
+}
+
+#dublincore-toolbarbutton:hover {
+	-moz-image-region: rect(0 72px 24px 48px);
+}
+
+toolbar[iconsize="small"] #dublincore-toolbarbutton {
+	-moz-image-region: rect(0 89px 16px 72px);
+}
+
+toolbar[iconsize="small"] #dublincore-toolbarbutton[disabled="true"], toolbar[iconsize="small"] #dublincore-toolbarbutton[disabled="true"]:hover {
+	-moz-image-region: rect(0 106px 16px 89px);
+}
+
+toolbar[iconsize="small"] #dublincore-toolbarbutton:hover {
+	-moz-image-region: rect(0 123px 16px 106px);
+}

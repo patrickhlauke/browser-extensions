@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://geourl/skin/geourl.css" type="text/css"?>
+
+<!DOCTYPE overlay SYSTEM "chrome://geourl/locale/overlay.dtd">
+
+<overlay id="geourloverlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+
+<script type="application/x-javascript" src="chrome://geourl/content/overlay.js"/>
+
+<stringbundleset id="stringbundleset">
+	<stringbundle id="geourl-string-bundle" src="chrome://geourl/locale/default.properties"/>
+</stringbundleset>
+
+<statusbar id="status-bar">
+    <statusbarpanel id="geourl-statusbar" insertafter="livemark-button">
+	    <toolbarbutton id="geourl-statusbarbutton"
+			class="toolbarbutton-1"
+			oncommand=""
+			context="geourl-statusbar-menu-disabled"
+			label=""
+			tooltiptext=""
+			disabled="true"/>
+			
+			<popup id="geourl-statusbar-menu">
+				<menuitem id="geourl-destination-default" label="" oncommand=""/>
+				<menuseparator/>
+				<menuseparator id="geourl-statusbar-menuseparator"/>
+				<menuitem label="&geourl.menu.options.label;" oncommand="geourlOptions()"/>
+			</popup>
+			
+			<popup id="geourl-statusbar-menu-disabled">
+				<menuitem label="&geourl.menu.nottags.label;" disabled="true"/>
+				<menuseparator/>
+				<menuitem label="&geourl.menu.options.label;" oncommand="geourlOptions()"/>
+			</popup>
+
+	</statusbarpanel>
+</statusbar>
+</overlay>

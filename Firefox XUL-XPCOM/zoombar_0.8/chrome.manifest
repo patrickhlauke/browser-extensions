@@ -1,0 +1,5 @@
+content		zoombar	chrome/content/
+skin		zoombar	skin chrome/skin/
+style		chrome://global/content/customizeToolbar.xul	chrome://zoombar/skin/zoombar.css
+style		chrome://browser/content/browser.xul	chrome://zoombar/skin/zoombar.css
+overlay		chrome://browser/content/browser.xul chrome://zoombar/content/browserOverlay.xul

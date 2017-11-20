@@ -1,0 +1,19 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+#send_link-button {
+	list-style-image: url(chrome://send_link/skin/buttons.png);
+	-moz-image-region: rect(0 23px 24px 0);
+}
+
+#send_link-button:hover {
+	-moz-image-region: rect(24px 23px 48px 0);
+}
+
+
+toolbar[iconsize="small"] #send_link-button {
+	-moz-image-region: rect(0 40px 16px 23px);
+}
+
+toolbar[iconsize="small"] #send_link-button:hover {
+	-moz-image-region: rect(24px 40px 40px 23px);
+}

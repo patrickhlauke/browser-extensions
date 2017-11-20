@@ -1,0 +1,8 @@
+content		text_size	chrome/chromeFiles/content/
+skin		text_size	classic chrome/chromeFiles/skin/
+
+overlay		chrome://browser/content/browser.xul chrome://text_size/content/browserOverlay.xul
+overlay		chrome://messenger/content/messenger.xul chrome://text_size/content/emailOverlay.xul
+overlay		chrome://messenger/content/mailWindowOverlay.xul chrome://text_size/content/emailOverlay.xul
+
+style		chrome://global/content/customizeToolbar.xul	chrome://text_size/skin/text_size.css

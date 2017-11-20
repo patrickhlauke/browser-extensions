@@ -1,0 +1,30 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* statusbar button */
+
+#geourl-statusbar {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+#geourl-statusbarbutton {
+	-moz-appearance: none;
+	margin: 0 !important;
+	padding: 0 !important;
+	list-style-image: url(chrome://geourl/skin/buttons.png);
+	-moz-image-region: rect(0 89px 16px 72px);
+}
+
+#geourl-statusbarbutton[disabled="true"] {
+	-moz-image-region: rect(0 106px 16px 89px);
+}
+
+#geourl-statusbarbutton:hover {
+	-moz-image-region: rect(0 123px 16px 106px);
+}
+
+#geourl-statusbarbutton[disabled="true"]:hover {
+	-moz-image-region: rect(0 106px 16px 89px);
+}
+
+#geourl-statusbarbutton .toolbarbutton-text { display: none !important; }

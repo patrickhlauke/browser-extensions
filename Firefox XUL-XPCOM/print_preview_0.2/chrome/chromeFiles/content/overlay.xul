@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://print_preview/skin/print_preview.css" type="text/css"?>
+
+<!DOCTYPE overlay [
+<!ENTITY % browserDTD SYSTEM "chrome://browser/locale/browser.dtd" >
+%browserDTD;
+<!ENTITY % globalRegionDTD SYSTEM "chrome://global-region/locale/region.dtd">
+%globalRegionDTD;
+]>
+
+<overlay id="printpreviewoverlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<toolbarpalette id="BrowserToolbarPalette">
+	<!-- this redefines the print-button, as the overlay adds the new type and the menupopup to the existing button -->
+	<toolbarbutton id="print-button" type="menu-button">
+		<menupopup>
+			<!-- notice the absence of any command or oncommand, as it inherits the existing ones from the normal print button -->
+			<menuitem id="print-button-popup" label="&printCmd.label;" accesskey="P"/>
+			<!-- here we define our own oncommand, and more importantly we prevent the event bubbling, as otherwise cmd_print still gets executed as this is part of the button -->
+			<menuitem label="&printPreviewCmd.label;" oncommand="PrintUtils.printPreview(onEnterPrintPreview, onExitPrintPreview); event.preventBubble();" accesskey="V"/>
+		</menupopup>
+	</toolbarbutton>
+</toolbarpalette>
+
+<popup id="contentAreaContextMenu">
+	<menu id="context-print-menu" label="&printCmd.label;" accesskey="P" insertafter="context-stop">
+		<menupopup>
+			<menuitem id="context-print-menu-print" label="&printCmd.label;" accesskey="P" command="cmd_print"/>
+			<menuitem id="context-print-menu-preview" label="&printPreviewCmd.label;" accesskey="V" oncommand="PrintUtils.printPreview(onEnterPrintPreview, onExitPrintPreview);"/>
+		</menupopup>
+	</menu>
+</popup>
+
+</overlay>

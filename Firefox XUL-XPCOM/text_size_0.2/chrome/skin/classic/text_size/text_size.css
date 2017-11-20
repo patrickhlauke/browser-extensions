@@ -1,0 +1,29 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+#text_size-toolbar toolbarbutton {
+	list-style-image: url(chrome://text_size/skin/buttons.png);
+}
+
+#text_size-toolbar toolbarbutton#text_size-toolbar-increase {
+	-moz-image-region: rect(0 23px 24px 0);
+}
+
+toolbar[iconsize="small"] #text_size-toolbar toolbarbutton#text_size-toolbar-increase {
+	-moz-image-region: rect(0 81px 16px 62px);
+}
+
+#text_size-toolbar toolbarbutton#text_size-toolbar-decrease {
+	-moz-image-region: rect(0 40px 24px 23px);
+}
+
+toolbar[iconsize="small"] #text_size-toolbar toolbarbutton#text_size-toolbar-decrease {
+	-moz-image-region: rect(0 96px 16px 81px);
+}
+
+#text_size-toolbar toolbarbutton#text_size-toolbar-reset {
+	-moz-image-region: rect(0 62px 24px 40px);
+}
+
+toolbar[iconsize="small"] #text_size-toolbar toolbarbutton#text_size-toolbar-reset {
+	-moz-image-region: rect(0 113px 16px 96px);
+}

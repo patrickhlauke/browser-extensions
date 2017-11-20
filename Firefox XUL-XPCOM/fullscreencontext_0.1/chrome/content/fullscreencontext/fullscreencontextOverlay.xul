@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE window [
+<!ENTITY % browserDTD SYSTEM "chrome://browser/locale/browser.dtd" >
+%browserDTD;
+<!ENTITY % globalRegionDTD SYSTEM "chrome://global-region/locale/region.dtd">
+%globalRegionDTD;
+]>
+
+<overlay id="fullscreencontextOverlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+// This imports our javascript.
+
+<script type="application/x-javascript" src="chrome://browser/content/browser.js"/>
+
+// This is for the right click menu.
+
+<popup id="contentAreaContextMenu">
+	<menuitem id="fullscreencontext" insertafter="context-stop" label="&fullScreenCmd.label;" oncommand="BrowserFullScreen();"/>
+	<menuseparator id="viewoptions-sep" insertafter="context-stop"/>	
+</popup>
+
+</overlay>
+

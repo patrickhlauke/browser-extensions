@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+	<Description about="urn:mozilla:install-manifest">
+
+		<em:id>{C549AC23-0086-4637-A8BE-6A9020B520F7}</em:id>
+		<em:name>GeoURL</em:name>
+		<em:version>0.2</em:version>
+		<em:description>If a page contains ICBM or geo.position META tags, this extension lets you open GeoURL to query what sites are near that location.</em:description>
+		<em:creator>Patrick H. Lauke aka redux</em:creator>
+		<em:homepageURL>http://www.splintered.co.uk/</em:homepageURL>
+		<em:iconURL>chrome://geourl/skin/icon.png</em:iconURL>
+		<em:aboutURL>chrome://geourl/content/about.xul</em:aboutURL>
+		<em:file>
+			<Description about="urn:mozilla:extension:file:geourl.jar">
+				<em:locale>locale/en-US/geourl/</em:locale>
+				<em:package>content/geourl/</em:package>
+				<em:skin>skin/classic/geourl/</em:skin>
+			</Description>
+		</em:file>
+
+		<em:targetApplication> <!-- Firefox -->
+			<Description>
+				<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+				<em:minVersion>1.0</em:minVersion>
+				<em:maxVersion>1.0</em:maxVersion>
+			</Description>
+		</em:targetApplication>
+
+	</Description>
+
+</RDF>

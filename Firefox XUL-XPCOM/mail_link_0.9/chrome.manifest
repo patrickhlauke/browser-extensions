@@ -1,0 +1,5 @@
+content		email_link	chrome/content/
+skin 		email_link	skin chrome/skin/unix/
+skin 		email_link	skin chrome/skin/	os=WINNT
+skin 		email_link	skin chrome/skin/	os=Darwin
+overlay		chrome://browser/content/browser.xul chrome://email_link/content/overlay.xul

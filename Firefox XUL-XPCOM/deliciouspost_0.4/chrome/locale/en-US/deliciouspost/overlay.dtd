@@ -1,0 +1,7 @@
+<!-- context menu overlay -->
+<!ENTITY menuitem.label "Post Page to del.icio.us...">
+<!ENTITY menuitem.link.label "Post Link to del.icio.us...">
+
+<!-- toolbar button overlay -->
+<!ENTITY toolbarbutton.tooltiptext "Post Page to del.icio.us...">
+<!ENTITY toolbarbutton.label "del.icio.us">

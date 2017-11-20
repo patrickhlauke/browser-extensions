@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<overlay id="longdescOverlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+// This imports our javascript.
+
+<script type="application/x-javascript" src="chrome://longdesc/content/overlay.js">
+
+</script>
+
+
+// This is for the right click menu.
+
+<popup id="contentAreaContextMenu">
+  <menuitem id="longdesc" label="View Image Longdesc" accesskey="L" 
+  insertafter="context-viewimage" oncommand="performShowLongdesc();"/>
+</popup>
+
+</overlay>
+

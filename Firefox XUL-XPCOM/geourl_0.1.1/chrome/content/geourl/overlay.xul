@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://geourl/skin/geourl.css" type="text/css"?>
+
+<!DOCTYPE overlay SYSTEM "chrome://geourl/locale/overlay.dtd">
+
+<overlay id="geourloverlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+
+<script type="application/x-javascript" src="chrome://geourl/content/overlay.js"/>
+
+<toolbarpalette id="BrowserToolbarPalette">
+    <toolbarbutton id="geourl-toolbarbutton"
+		class="toolbarbutton-1"
+		oncommand="geourlNear()"
+		label="&geourl.label;"
+		tooltiptext="&geourl.tooltiptext;"
+		disabled="true"/>
+</toolbarpalette>
+
+</overlay>

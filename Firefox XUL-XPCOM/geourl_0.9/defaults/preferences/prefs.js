@@ -1,0 +1,3 @@
+pref("extensions.geourl.destinations","{'Google Maps':'http://maps.google.com/?sll=[LAT],[LONG]','Yahoo! Maps':'http://maps.yahoo.com/#mvt=h&lon=[LONG]&lat=[LAT]&mag=1','Microsoft Live Local':'http://local.live.com/default.aspx?cp=[LAT]~[LONG]&style=h&lvl=17','Multimap':'http://www.multimap.com/maps/?t=l&map=[LAT],[LONG]|18|4','Flickr':'http://www.flickr.com/map/?&fLat=[LAT]&fLon=[LONG]&zl=1','Wikimapia':'http://www.wikimapia.org/#lat=[LAT]&lon=[LONG]&z=18','OpenStreetMap':'http://www.openstreetmap.org/?mlat=[LAT]&mlon=[LONG]&zoom=16','GeoURL':'http://geourl.org/near?lat=[LAT]&long=[LONG]'}");
+
+pref("extensions.geourl.destinations_preferred",1);

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://dublincore/skin/dublincore_window.css" type="text/css"?>
+
+<!DOCTYPE dialog SYSTEM "chrome://dublincore/locale/window_list.dtd">
+<dialog id="dublincore-window-list"
+		buttons="accept"
+        onload="dublincore_window_init();"
+        title="&title;"
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<keyset>
+	<key id="copy" key="c" modifiers="accel" oncommand="doCopy(event);"/>
+</keyset>
+
+<script type="application/x-javascript" src="chrome://dublincore/content/common.js"/>
+<script type="application/x-javascript" src="chrome://dublincore/content/windows/treeview.js"/>
+<script type="application/x-javascript" src="chrome://dublincore/content/windows/list.js"/>
+
+<label control="dublincore-tree" value="&tree.label;"/>
+<tree id="dublincore-tree" flex="1" onselect="dublincore_detail()">
+	<treecols>
+		<treecol persist="hidden width" flex="1" id="meta-name" label="&tree.element.label;"/>
+		<splitter class="tree-splitter"/>
+		<treecol persist="hidden width" flex="3" id="meta-content" label="&tree.content.label;"/>
+		<splitter class="tree-splitter"/>
+		<treecol persist="hidden width" flex="1" id="meta-scheme" label="&tree.scheme.label;"/>
+	</treecols>
+	<treechildren flex="1"/>
+</tree>
+
+<label control="dublincore-detail-view" value="&textbox.label;"/>
+<textbox id="dublincore-detail-view" multiline="true" readonly="true" rows="5"/>
+
+</dialog>

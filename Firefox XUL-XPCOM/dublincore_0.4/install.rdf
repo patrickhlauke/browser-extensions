@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>{F8E09DAD-AF77-4ad4-A443-8A72451A7039}</em:id>
+    <em:version>0.4</em:version>
+    <em:type>2</em:type>
+   
+    <!-- Target Application this extension can install into, 
+         with minimum and maximum supported versions. --> 
+    <em:targetApplication>
+      <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+        <em:minVersion>1.5</em:minVersion>
+        <em:maxVersion>2.0.0.*</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+   
+    <!-- Front End MetaData -->
+    <em:name>Dublin Core Viewer</em:name>
+    <em:description>Displays Dublin Core Metadata embedded into the &lt;head&gt; section of an XHTML Web page using the &lt;meta&gt; and &lt;link&gt; elements.</em:description>
+    <em:creator>Patrick H. Lauke aka redux</em:creator>
+    <em:homepageURL>http://www.splintered.co.uk/</em:homepageURL>
+	<em:iconURL>chrome://dublincore/skin/icon.png</em:iconURL>
+  </Description>      
+</RDF>

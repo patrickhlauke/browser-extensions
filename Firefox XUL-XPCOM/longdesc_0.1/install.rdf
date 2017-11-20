@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+	<Description about="urn:mozilla:install-manifest">
+
+		<em:id>{127EB6B0-055F-49bc-BD00-974E1B04490C}</em:id>
+		<em:name>Longdesc</em:name>
+		<em:version>0.1</em:version>
+		<em:description>Makes an image's longdesc link attribute accessible via context menu.</em:description>
+		<em:creator>Patrick H. Lauke aka redux</em:creator>
+		<em:homepageURL>http://www.splintered.co.uk</em:homepageURL>
+		<em:iconURL>chrome://longdesc/skin/longdesc.png</em:iconURL>
+		<em:aboutURL>chrome://longdesc/content/about.xul</em:aboutURL>
+		<em:updateURL>http://www.splintered.co.uk/extensions/update.rdf</em:updateURL>
+		<em:file>
+			<Description about="urn:mozilla:extension:file:longdesc.jar">
+				<em:package>content/longdesc/</em:package>
+				<em:skin>skin/classic/longdesc/</em:skin>
+			</Description>
+		</em:file>
+
+		<em:targetApplication>
+			<Description>
+				<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+				<em:minVersion>0.7</em:minVersion>
+				<em:maxVersion>0.10</em:maxVersion>
+			</Description>
+		</em:targetApplication>
+		<em:targetApplication>
+			<Description>
+				<em:id>{86c18b42-e466-45a9-ae7a-9b95ba6f5640}</em:id>
+				<em:minVersion>1.7</em:minVersion>
+				<em:maxVersion>1.7</em:maxVersion>
+			</Description>
+		</em:targetApplication>
+
+	</Description>
+
+</RDF>

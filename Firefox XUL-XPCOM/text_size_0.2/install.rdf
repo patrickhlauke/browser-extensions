@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+	<Description about="urn:mozilla:install-manifest">
+
+		<em:id>{50B7AB30-18EF-4c9c-9FAF-E413C3A1FA78}</em:id>
+		<em:name>Text size toolbar</em:name>
+		<em:version>0.2</em:version>
+		<em:description>Adds text size buttons to the toolbar.</em:description>
+		<em:creator>Patrick H. Lauke aka redux</em:creator>
+		<em:homepageURL>http://www.splintered.co.uk/</em:homepageURL>
+		<em:iconURL>chrome://text_size/skin/icon.png</em:iconURL>
+		<em:aboutURL>chrome://text_size/content/about.xul</em:aboutURL>
+		<em:file>
+			<Description about="urn:mozilla:extension:file:text_size.jar">
+				<em:locale>locale/en-US/text_size/</em:locale>
+				<em:package>content/text_size/</em:package>
+				<em:skin>skin/classic/text_size/</em:skin>
+			</Description>
+		</em:file>
+
+		<em:targetApplication> <!-- Firefox -->
+			<Description>
+				<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+				<em:minVersion>1.0</em:minVersion>
+				<em:maxVersion>1.0</em:maxVersion>
+			</Description>
+		</em:targetApplication>
+
+	</Description>
+
+</RDF>

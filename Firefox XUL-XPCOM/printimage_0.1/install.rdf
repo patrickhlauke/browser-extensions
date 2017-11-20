@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+	<Description about="urn:mozilla:install-manifest">
+
+		<em:id>{2990C60B-0C93-496e-90F6-176E68895AF6}</em:id>
+		<em:name>Print Image</em:name>
+		<em:version>0.1</em:version>
+		<em:description>Adds "Print Image..." to the context menu.</em:description>
+		<em:creator>Patrick H. Lauke aka redux</em:creator>
+		<em:homepageURL>http://www.splintered.co.uk</em:homepageURL>
+		<em:iconURL>chrome://printimage/skin/printimage.png</em:iconURL>
+		<em:aboutURL>chrome://printimage/content/about.xul</em:aboutURL>
+		<em:file>
+			<Description about="urn:mozilla:extension:file:printimage.jar">
+				<em:package>content/printimage/</em:package>
+				<em:skin>skin/classic/printimage/</em:skin>
+			</Description>
+		</em:file>
+
+		<em:targetApplication>
+			<Description>
+				<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+				<em:minVersion>0.7</em:minVersion>
+				<em:maxVersion>1.0</em:maxVersion>
+			</Description>
+		</em:targetApplication>
+		<em:targetApplication>
+			<Description>
+				<em:id>{86c18b42-e466-45a9-ae7a-9b95ba6f5640}</em:id>
+				<em:minVersion>1.7</em:minVersion>
+				<em:maxVersion>1.7</em:maxVersion>
+			</Description>
+		</em:targetApplication>
+
+	</Description>
+
+</RDF>

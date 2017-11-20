@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://text_size/skin/text_size.css" type="text/css"?>
+
+<!DOCTYPE window [
+<!ENTITY % browserDTD SYSTEM "chrome://browser/locale/browser.dtd" >
+%browserDTD;
+<!ENTITY % globalRegionDTD SYSTEM "chrome://global-region/locale/region.dtd">
+%globalRegionDTD;
+]>
+
+<overlay id="textsizetoolbaroverlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<toolbarpalette id="BrowserToolbarPalette">
+    <toolbarbutton id="text_size-toolbarbutton"
+		label="&textSize.label;"
+		tooltiptext="&textSize.label;"
+		type="menu">
+		<menupopup>
+			<menuitem label="&textZoomEnlargeCmd.label;" accesskey="&textZoomEnlargeCmd.accesskey;" command="cmd_textZoomEnlarge"/>
+			<menuitem label="&textZoomReduceCmd.label;" accesskey="&textZoomReduceCmd.accesskey;" command="cmd_textZoomReduce"/>
+			<menuseparator/>
+			<menuitem label="&textZoomResetCmd.label;" accesskey="&textZoomResetCmd.accesskey;" command="cmd_textZoomReset"/>
+		</menupopup>
+	</toolbarbutton>	
+</toolbarpalette>
+
+</overlay>

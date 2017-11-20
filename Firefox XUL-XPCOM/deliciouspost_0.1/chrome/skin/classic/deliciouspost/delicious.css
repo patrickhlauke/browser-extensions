@@ -1,0 +1,20 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+#delicious-post-toolbarbutton {
+	-moz-image-region: rect(0 29px 24px 0);
+	list-style-image: url(chrome://deliciouspost/skin/buttons.png);
+}
+
+toolbar[iconsize="small"] #delicious-post-toolbarbutton {
+	-moz-image-region: rect(0 50px 16px 32px);
+	list-style-image: url(chrome://deliciouspost/skin/buttons.png);
+}
+dialog#delicious-post-dialog #delicios-post-dialog-buttons {
+	-moz-box-pack: end;
+}
+
+/* hack to circumvent FF bug 266459 */
+progressmeter[mode="undetermined"] {
+  -moz-binding:
+url("chrome://global/content/bindings/progressmeter.xml#progressmeter-undetermined");
+}

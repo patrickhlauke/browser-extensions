@@ -1,0 +1,10 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+#text_size-toolbarbutton {
+	-moz-image-region: rect(0 28px 18px 0);
+	list-style-image: url(chrome://text_size/skin/buttons.png);
+}
+
+toolbar[iconsize="small"] #text_size-toolbarbutton {
+	-moz-image-region: rect(0 47px 13px 28px);
+}

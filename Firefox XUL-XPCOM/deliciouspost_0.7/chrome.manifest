@@ -1,0 +1,5 @@
+content		deliciouspost	chrome/chromeFiles/content/
+skin		deliciouspost	classic chrome/chromeFiles/skin/
+locale		deliciouspost	en	chrome/chromeFiles/locale/en/
+overlay		chrome://browser/content/browser.xul chrome://deliciouspost/content/overlay.xul
+style		chrome://global/content/customizeToolbar.xul	chrome://deliciouspost/skin/delicious.css

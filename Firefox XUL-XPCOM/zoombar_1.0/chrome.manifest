@@ -1,0 +1,6 @@
+content		zoombar	chrome/content/
+skin 		zoombar	skin chrome/skin/unix/
+skin 		zoombar	skin chrome/skin/	os=WINNT
+skin 		zoombar	skin chrome/skin/	os=Darwin
+style		chrome://global/content/customizeToolbar.xul	chrome://zoombar/skin/zoombar.css
+overlay		chrome://browser/content/browser.xul chrome://zoombar/content/overlay.xul

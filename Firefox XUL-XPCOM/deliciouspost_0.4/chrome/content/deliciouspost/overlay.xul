@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://deliciouspost/skin/delicious.css" type="text/css"?>
+
+<!DOCTYPE overlay SYSTEM "chrome://deliciouspost/locale/overlay.dtd">
+
+<overlay id="deliciouspostoverlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+
+<script type="application/x-javascript" src="chrome://deliciouspost/content/overlay.js"/>
+
+<popup id="contentAreaContextMenu">
+	<menuitem id="delicious-post-context-page" class="menuitem" insertafter="context-bookmarkpage" label="&menuitem.label;" oncommand="delicious_post_submit()"/>
+	<menuitem id="delicious-post-context-link" class="menuitem" insertafter="context-bookmarklink" label="&menuitem.link.label;" oncommand="delicious_post_submit()" hidden="true"/>
+</popup>
+
+<toolbarpalette id="BrowserToolbarPalette">
+    <toolbarbutton id="delicious-post-toolbarbutton"
+		class="toolbarbutton-1"
+		oncommand="delicious_post_toolbar()"
+		label="&toolbarbutton.label;"
+		tooltiptext="&toolbarbutton.tooltiptext;"/>
+</toolbarpalette>
+
+</overlay>

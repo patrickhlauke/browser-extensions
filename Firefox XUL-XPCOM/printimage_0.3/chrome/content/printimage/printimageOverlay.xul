@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<overlay id="printimageOverlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+// This imports our javascript.
+
+<script type="application/x-javascript" src="chrome://printimage/content/printimageOverlay.js">
+
+</script>
+
+
+// This is for the right click menu.
+
+<popup id="contentAreaContextMenu">
+  <menuitem id="printimage-context" label="Print Image..."  
+  insertafter="context-viewimage" oncommand="printImage.print();"/>
+</popup>
+
+</overlay>
+

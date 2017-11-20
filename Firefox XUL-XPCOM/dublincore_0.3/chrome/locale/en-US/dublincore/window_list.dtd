@@ -1,0 +1,8 @@
+<!-- List window -->
+<!ENTITY title "Dublin Core Metadata">
+
+<!ENTITY tree.label "The following DC metadata was found:">
+<!ENTITY tree.element.label "Element">
+<!ENTITY tree.content.label "Content">
+<!ENTITY tree.scheme.label "Scheme">
+<!ENTITY textbox.label "Details">

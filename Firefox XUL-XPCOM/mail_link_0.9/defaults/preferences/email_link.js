@@ -1,0 +1,1 @@
+pref("extensions.email_link.firstRunDone", false);

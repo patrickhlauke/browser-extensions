@@ -1,0 +1,4 @@
+content		send_link	chrome/content/
+skin		send_link	skin chrome/skin/
+overlay		chrome://browser/content/browser.xul chrome://send_link/content/overlay.xul
+style		chrome://global/content/customizeToolbar.xul	chrome://send_link/skin/send_link.css

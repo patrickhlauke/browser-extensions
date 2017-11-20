@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://geourl/skin/geourl.css" type="text/css"?>
+
+<!DOCTYPE dialog SYSTEM "chrome://geourl/locale/dialog_options.dtd">
+<dialog id="geourl-options"
+        onload="geourlOptionsInit()"
+		ondialogaccept="geourlOptionsSetPreferred()"
+        title="&title;"
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+	<script type="application/x-javascript" src="chrome://geourl/content/dialogs/options.js"/>
+
+	<label control="geourl-options-list" value="&list.label;"/>
+	<listbox rows="5" id="geourl-options-list" flex="1">
+		<listcols>
+			<listcol flex="1"/>
+		</listcols>
+		<listhead>
+			<listheader label="&list.column.label;"/>
+		</listhead>
+	</listbox>
+	
+</dialog>

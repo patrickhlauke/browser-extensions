@@ -1,0 +1,9 @@
+content		zoombar	chrome/content/
+skin		zoombar	skin chrome/skin/
+
+style		chrome://global/content/customizeToolbar.xul	chrome://zoombar/skin/zoombar.css
+
+style		chrome://messenger/content/messenger.xul chrome://zoombar/skin/zoombar.css
+overlay		chrome://messenger/content/messenger.xul chrome://zoombar/content/emailOverlay.xul
+style		chrome://messenger/content/mailWindowOverlay.xul chrome://zoombar/skin/zoombar.css
+overlay		chrome://messenger/content/mailWindowOverlay.xul chrome://zoombar/content/emailOverlay.xul

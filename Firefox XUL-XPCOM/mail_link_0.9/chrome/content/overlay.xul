@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://email_link/skin/email_link.css" type="text/css"?>
+
+<!DOCTYPE overlay [
+<!ENTITY % browserDTD SYSTEM "chrome://browser/locale/browser.dtd" >
+%browserDTD;
+<!ENTITY % globalRegionDTD SYSTEM "chrome://global-region/locale/region.dtd">
+%globalRegionDTD;
+]>
+
+<overlay id="emaillinkoverlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<script type="application/x-javascript" src="chrome://email_link/content/common.js"/>
+
+<toolbarpalette id="BrowserToolbarPalette">
+	<toolbarbutton id="email_link-button" tooltiptext="&emailPageCmd.label;" label="&emailPageCmd.label;" command="Browser:SendLink" class="toolbarbutton-1"/>
+</toolbarpalette>
+
+</overlay>

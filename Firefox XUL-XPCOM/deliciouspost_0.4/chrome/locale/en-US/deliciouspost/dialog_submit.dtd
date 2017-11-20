@@ -1,0 +1,16 @@
+<!-- Dialog -->
+<!ENTITY title "Post to del.icio.us ...">
+
+<!ENTITY tabbox.pageinfo.tab.label "Page info">
+<!ENTITY url.label "Url">
+<!ENTITY description.label "Description">
+<!ENTITY extended.label "Extended (optional)">
+<!ENTITY tags.label "Tags (space separated)">
+
+<!ENTITY tabbox.login.tab.label "Login">
+<!ENTITY username.label "Username">
+<!ENTITY password.label "Password">
+<!ENTITY password_save.label "Save password">
+
+<!ENTITY button.accept.label "Post">
+<!ENTITY button.cancel.label "Cancel">

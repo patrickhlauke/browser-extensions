@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>{C549AC23-0086-4637-A8BE-6A9020B520F7}</em:id>
+    <em:version>0.5</em:version>
+    <em:type>2</em:type>
+   
+    <!-- Target Application this extension can install into, 
+         with minimum and maximum supported versions. --> 
+    <em:targetApplication>
+      <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+        <em:minVersion>1.5</em:minVersion>
+        <em:maxVersion>2.0b2</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+   
+    <!-- Front End MetaData -->
+    <em:name>GeoURL</em:name>
+    <em:description>Opens useful sites for pages geographically marked with ICBM or geo.position META tags.</em:description>
+    <em:creator>Patrick H. Lauke aka redux</em:creator>
+    <em:homepageURL>http://www.splintered.co.uk/</em:homepageURL>
+	<em:iconURL>chrome://geourl/skin/icon.png</em:iconURL>
+	<em:optionsURL>chrome://geourl/content/dialogs/options.xul</em:optionsURL>
+  </Description>      
+</RDF>

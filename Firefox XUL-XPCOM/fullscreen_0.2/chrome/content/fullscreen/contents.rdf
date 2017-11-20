@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+
+<RDF:RDF xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:chrome="http://www.mozilla.org/rdf/chrome#">
+
+	<RDF:Seq RDF:about="urn:mozilla:package:root">
+		<RDF:li RDF:resource="urn:mozilla:package:fullscreen"/>
+	</RDF:Seq>
+
+	<RDF:Seq RDF:about="urn:mozilla:overlays">
+		<RDF:li RDF:resource="chrome://browser/content/browser.xul"/>
+	</RDF:Seq>
+
+	<RDF:Seq RDF:about="chrome://browser/content/browser.xul">
+		<RDF:li>chrome://fullscreen/content/overlay.xul</RDF:li>
+	</RDF:Seq>
+
+	<RDF:Description RDF:about="urn:mozilla:package:fullscreen"
+		chrome:displayName="Full Screen 0.2"
+		chrome:author="Patrick H. Lauke"
+		chrome:authorURL="mailto:redux@splintered.co.uk"
+		chrome:name="fullscreen"
+		chrome:extension="true"
+		chrome:description="Adds 'Full Screen' toolbar button and context menu command">
+	</RDF:Description>
+
+</RDF:RDF>

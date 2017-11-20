@@ -1,0 +1,5 @@
+content		dublincore	chrome/chromeFiles/content/
+locale		dublincore	en	chrome/chromeFiles/locale/en/
+skin		dublincore	classic chrome/chromeFiles/skin/
+overlay		chrome://browser/content/browser.xul chrome://dublincore/content/overlay.xul
+style		chrome://global/content/customizeToolbar.xul	chrome://dublincore/skin/dublincore.css

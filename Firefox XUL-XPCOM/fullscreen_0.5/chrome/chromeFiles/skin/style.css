@@ -1,0 +1,18 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+#fullscreen-toolbarbutton {
+	list-style-image: url(chrome://fullscreen/skin/buttons.png);
+	-moz-image-region: rect(0 26px 24px 0);
+}
+
+#fullscreen-toolbarbutton:hover {
+	-moz-image-region: rect(0 52px 24px 26px);
+}
+
+toolbar[iconsize="small"] #fullscreen-toolbarbutton {
+	-moz-image-region: rect(0 70px 16px 52px);
+}
+
+toolbar[iconsize="small"] #fullscreen-toolbarbutton:hover {
+	-moz-image-region: rect(0 88px 16px 70px);
+}

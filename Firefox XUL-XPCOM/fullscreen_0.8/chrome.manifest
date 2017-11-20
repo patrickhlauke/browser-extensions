@@ -1,0 +1,4 @@
+content		fullscreen	chrome/content/
+skin		fullscreen	skin chrome/skin/
+overlay		chrome://browser/content/browser.xul chrome://fullscreen/content/overlay.xul
+style		chrome://global/content/customizeToolbar.xul	chrome://fullscreen/skin/style.css

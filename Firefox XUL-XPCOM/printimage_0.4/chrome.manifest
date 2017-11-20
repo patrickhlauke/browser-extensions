@@ -1,0 +1,3 @@
+content		printimage	chrome/chromeFiles/content/
+skin		printimage	classic chrome/chromeFiles/skin/
+overlay		chrome://browser/content/browser.xul chrome://printimage/content/overlay.xul

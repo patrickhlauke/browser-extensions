@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<window class="dialog"
+	title="Full Screen context - About"
+	orient="vertical"
+	autostretch="always"
+	onload="sizeToContent()"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<!-- Original template by Jed Brown -->
+
+<groupbox align="center" orient="horizontal">
+<vbox>
+  <text value="Full Screen context" style="font-weight: bold;"/>
+  <text value="ver. 0.1"/>
+  <separator class="thin"/>
+  <text value="Created By:" style="font-weight: bold;"/>
+  <text value="Patrick H. Lauke aka redux" class="url"
+        onclick="window.open('http://www.splintered.co.uk'); window.close();"/>
+  <separator class="thin"/>
+    <text value="Home Page:" style="font-weight: bold;"/>
+    <text value="http://www.splintered.co.uk/"
+          class="url"
+        onclick="window.open('http://www.splintered.co.uk/'); window.close();"/>
+  <separator class="thin"/>
+</vbox>
+<spring flex="1"/>
+<image src="chrome://fullscreencontext/skin/fullscreencontextb.png"/>
+</groupbox>
+
+  <hbox>
+  <spacer flex="1"/>
+   <button label="Close" oncommand="window.close();"/>
+  </hbox>
+
+</window>

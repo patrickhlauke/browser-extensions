@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://dublincore/skin/dublincore.css" type="text/css"?>
+
+<!DOCTYPE overlay SYSTEM "chrome://dublincore/locale/overlay.dtd">
+
+<overlay id="dublincoreoverlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<script type="application/x-javascript" src="chrome://dublincore/content/common.js"/>
+<script type="application/x-javascript" src="chrome://dublincore/content/overlay.js"/>
+
+<toolbarpalette id="BrowserToolbarPalette">
+    <toolbarbutton id="dublincore-toolbarbutton"
+		class="toolbarbutton-1"
+		oncommand="dublincoreList()"
+		label="&dublincore.label;"
+		tooltiptext="&dublincore.tooltiptext;"
+		disabled="true"/>
+</toolbarpalette>
+
+<statusbar id="status-bar">
+    <statusbarpanel id="dublincore-statusbar" insertafter="livemark-button">
+	    <toolbarbutton id="dublincore-statusbarbutton"
+			class="toolbarbutton-1"
+			oncommand="dublincoreList()"
+			label="&dublincore.label;"
+			tooltiptext="&dublincore.tooltiptext;"
+			disabled="true"/>
+	</statusbarpanel>
+</statusbar>
+</overlay>

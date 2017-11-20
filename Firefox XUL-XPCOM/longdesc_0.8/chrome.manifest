@@ -1,0 +1,3 @@
+content		longdesc	chrome/chromeFiles/content/
+skin		longdesc	classic chrome/chromeFiles/skin/
+overlay		chrome://browser/content/browser.xul chrome://longdesc/content/overlay.xul

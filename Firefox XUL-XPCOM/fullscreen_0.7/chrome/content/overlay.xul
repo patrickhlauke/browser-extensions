@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://fullscreen/skin/style.css" type="text/css"?>
+
+<!DOCTYPE overlay [
+<!ENTITY % browserDTD SYSTEM "chrome://browser/locale/browser.dtd" >
+%browserDTD;
+]>
+
+<overlay id="fullscreenOverlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+// This is for the right click menu.
+
+<popup id="contentAreaContextMenu">
+	<menuseparator id="fullscreen-sep"/>
+	<menuitem id="fullscreen-context" label="&fullScreenCmd.label;" oncommand="BrowserFullScreen();"/>
+</popup>
+
+// Add toolbar button
+
+<toolbarpalette id="BrowserToolbarPalette">
+    <toolbarbutton id="fullscreen-toolbarbutton"
+		class="toolbarbutton-1"
+		oncommand="BrowserFullScreen();"
+		label="&fullScreenCmd.label;"
+		tooltiptext="&fullScreenCmd.label;"/>
+</toolbarpalette>
+
+</overlay>
+

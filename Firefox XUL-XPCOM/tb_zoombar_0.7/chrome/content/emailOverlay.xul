@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE overlay [
+<!ENTITY % messengerDTD SYSTEM "chrome://messenger/locale/messenger.dtd" >
+%messengerDTD;
+]>
+
+<overlay id="zoomtoolbaroverlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<toolbarpalette id="MailToolbarPalette" class="toolbar-additional">
+		<toolbaritem id="zoombar-toolbar" title="&fullZoom.label;" align="center">
+
+			<toolbarbutton id="zoombar-toolbar-increase" tooltiptext="&fullZoomEnlargeCmd.label;" label="&fullZoomEnlargeCmd.label;" command="cmd_fullZoomEnlarge" class="toolbarbutton-1"/>
+			<toolbarbutton id="zoombar-toolbar-decrease" tooltiptext="&fullZoomReduceCmd.label;" label="&fullZoomReduceCmd.label;" command="cmd_fullZoomReduce" class="toolbarbutton-1"/>
+			<toolbarbutton id="zoombar-toolbar-reset" tooltiptext="&fullZoomResetCmd.label;" label="&fullZoomResetCmd.label;" command="cmd_fullZoomReset" class="toolbarbutton-1"/>
+			
+		</toolbaritem>	
+</toolbarpalette>
+
+</overlay>

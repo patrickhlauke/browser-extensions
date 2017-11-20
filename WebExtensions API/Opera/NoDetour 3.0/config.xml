@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" version="3.0">
+    <name>NoDetour</name>
+    <description>Changes links passed through redirection scripts to point straight to the final URL.</description>
+    <author href="http://www.splintered.co.uk/" email="redux@splintered.co.uk">Patrick H. Lauke</author>
+    <icon src="icon.png"/>
+</widget>

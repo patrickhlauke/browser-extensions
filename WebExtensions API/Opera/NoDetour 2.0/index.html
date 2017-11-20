@@ -1,0 +1,22 @@
+﻿<!doctype html>
+<title>NoDetour</title>
+<script>
+window.addEventListener("load", function(){
+	var UIItemProperties = {
+		disabled: false, // The button is enabled.
+		title: "NoDetour", // The tooltip title.
+		icon: "button.png", // The icon (18x18) to use for the button.
+		onclick: function() {
+			// Send a message to the currently-selected tab.
+			var tab = opera.extension.tabs.getFocused();
+			if (tab) {
+					tab.postMessage('go');
+			}
+		}
+	};
+	// Next, we create the button and apply the above properties.
+    var button = opera.contexts.toolbar.createItem(UIItemProperties);
+    // Finally, we add the button to the toolbar.
+    opera.contexts.toolbar.addItem(button);
+}, false);
+</script>

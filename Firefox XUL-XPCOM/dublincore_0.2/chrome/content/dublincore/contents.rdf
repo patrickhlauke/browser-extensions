@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+
+<RDF:RDF xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:chrome="http://www.mozilla.org/rdf/chrome#">
+
+	<RDF:Seq RDF:about="urn:mozilla:package:root">
+		<RDF:li RDF:resource="urn:mozilla:package:dublincore"/>
+	</RDF:Seq>
+
+	<RDF:Seq RDF:about="urn:mozilla:overlays">
+		<RDF:li RDF:resource="chrome://browser/content/browser.xul"/>
+	</RDF:Seq>
+
+	<RDF:Seq RDF:about="chrome://browser/content/browser.xul">
+		<RDF:li>chrome://dublincore/content/overlay.xul</RDF:li>
+	</RDF:Seq>
+
+	<RDF:Description RDF:about="urn:mozilla:package:dublincore"
+		chrome:displayName="dublincore 0.2"
+		chrome:author="Patrick H. Lauke"
+		chrome:authorURL="mailto:redux@splintered.co.uk"
+		chrome:name="dublincore"
+		chrome:extension="true"
+		chrome:description="Displays Dublin Core Metadata embedded into the &lt;head&gt; section of an XHTML Web page using the &lt;meta&gt; and &lt;link&gt; elements.">
+	</RDF:Description>
+
+</RDF:RDF>
