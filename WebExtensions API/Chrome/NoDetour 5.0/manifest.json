@@ -1,0 +1,21 @@
+{
+  "name": "NoDetour",
+  "action": {},
+  "manifest_version": 3,
+  "version": "5.0",
+  "description": "Changes links passed through redirection scripts to point straight to the final URL.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "homepage_url": "https://www.splintered.co.uk",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "64": "icon64.png",
+    "128": "icon128.png"
+  }
+}
